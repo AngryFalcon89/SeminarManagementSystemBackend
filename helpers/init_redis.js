@@ -1,7 +1,11 @@
 import redis from 'redis'
 
-let redisPort = 6379;  // Replace with your redis port
-let redisHost = "127.0.0.1";  // Replace with your redis host
+import dotenv from 'dotenv';
+dotenv.config({path: './.env' })
+
+
+const redisPort = process.env.REDIS_PORT;
+const redisHost = process.env.REDIS_HOST;
 const client = redis.createClient({
     socket: {
       port: redisPort,
