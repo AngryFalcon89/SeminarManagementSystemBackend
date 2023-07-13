@@ -31,7 +31,7 @@ app.get('/', verifyAccessToken, async(req, res, next)=>{
 app.use('/auth', AuthRoute)
 
 //use book route
-app.use('/book', verifyAccessToken, BookRoute)
+app.use('/book', BookRoute)
 
 //in case no route is available this will respond 
 app.use(async(req, res, next)=>{
