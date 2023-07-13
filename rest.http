@@ -1,0 +1,66 @@
+###login-route
+POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"gl9629@myamu.ac.in","password":"qwerty124"
+}
+
+###login-route
+POST http://127.0.0.1:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"gl9629@myamu.ac.in","password":"qwerty124"
+}
+
+###
+GET http://127.0.0.1:3000
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODkxODkyNDcsImV4cCI6MTY4OTE5Mjg0NywiYXVkIjoiNjRhZWE1NDgwYWY4YjA1M2QzMWQwMTk3IiwiaXNzIjoiQ1MuemhjZXRAYW11In0.yQKnVItbMNpIb4fCYKDgbtcg_lH-OSN9T8lZ9qjayLM
+
+
+###refresh-token
+POST http://127.0.0.1:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODkxNjI3MDcsImV4cCI6MTcyMDcyMDMwNywiYXVkIjoiNjRhYmUwZjliZWRkOTg5ZDIzOTNlZDE5IiwiaXNzIjoiQ1MuemhjZXRAYW11In0.OboCkNnQzxWy4OCLUYpayC5vDvOVwZsrFNgkJw6J38E"
+}
+###logout-route
+DELETE http://127.0.0.1:3000/auth/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODkxNjI3NDAsImV4cCI6MTcyMDcyMDM0MCwiYXVkIjoiNjRhYmUwZjliZWRkOTg5ZDIzOTNlZDE5IiwiaXNzIjoiQ1MuemhjZXRAYW11In0.DOk8NfdwYZEpJ_ygTMuSt_BSjKnvrHPJHwQ6L0qQPlY"
+}
+
+###getAllBooks route 
+POST http://127.0.0.1:3000/book/addBook
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODkxODkyNDcsImV4cCI6MTY4OTE5Mjg0NywiYXVkIjoiNjRhZWE1NDgwYWY4YjA1M2QzMWQwMTk3IiwiaXNzIjoiQ1MuemhjZXRAYW11In0.yQKnVItbMNpIb4fCYKDgbtcg_lH-OSN9T8lZ9qjayLM
+
+{
+  "ID": "9999",
+  "Accession Number": "999999",
+  "MAL ACC. No.": "999999",
+  "AUTHOR": "Bilal",
+  "TITLE": "Girl in a scarf",
+  "Book_Status": false,
+  "Edition": 1,
+  "Publisher": "Bilal publication"
+}
+###
+DELETE http://127.0.0.1:3000/book/deleteBook
+Content-Type: application/json
+
+
+  {
+    "bookId": "64aef10cd541fb92e8f62148",
+    "ID": 9999,
+    "AUTHOR": "Bilal",
+    "TITLE": "Girl in a scarf",
+    "Book_Status": "false",
+    "Edition": "1",
+    "Publisher": "Bilal publication"
+  }
+
