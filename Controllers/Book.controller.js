@@ -53,8 +53,7 @@ export const search = async (req, res, next) => {
 
     const books = await Book.find(queryObject)
       .skip(skip)
-      .limit(limit)
-      .select("ID Accession_Number MAL_ACC_No AUTHOR TITLE Book_Status Edition Publisher");
+      .limit(limit);
 
     res.send({
       books,
