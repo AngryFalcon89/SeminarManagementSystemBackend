@@ -10,9 +10,7 @@ Welcome to the Seminar Management System Backend repository! This backend server
 - [Configuration](#configuration)
 - [Endpoints](#endpoints)
 - [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
-
+  
 ## Introduction
 
 This backend application is built using Node.js, Express.js, MongoDB, and Redis. It supports user authentication and book management for a Seminar Management System. The codebase is organized into controllers, routes, models, and helper functions for modularity and maintainability.
@@ -123,13 +121,3 @@ This backend application is built using Node.js, Express.js, MongoDB, and Redis.
 
 6. **Book Management:**
    - Utilize the book-related endpoints to manage books as described in the [Endpoints](#endpoints) section.
-
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md) before submitting any changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Feel free to reach out if you have any questions or need further assistance!
