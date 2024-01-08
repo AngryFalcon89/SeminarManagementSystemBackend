@@ -43,7 +43,7 @@ This backend application is built using Node.js, Express.js, MongoDB, and Redis.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/seminar-management-backend.git
+   https://github.com/AngryFalcon89/SeminarManagementSystemBackend.git
    cd seminar-management-backend
    ```
 
